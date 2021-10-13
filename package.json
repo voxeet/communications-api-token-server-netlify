@@ -1,0 +1,27 @@
+{
+  "name": "communications-api-token-server-netlify",
+  "version": "1.0.0",
+  "description": "Dolby.io Comminications API Token Server targeted to deploy on Netlify Functions.",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "dotenv": "^10.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolbyio-samples/communications-api-token-server-netlify.git"
+  },
+  "keywords": [
+    "FAS",
+    "Token",
+    "Generation"
+  ],
+  "author": "Dan Zeitman | Dolby.io",
+  "license": "See LICENSE in this repo",
+  "bugs": {
+    "url": "https://github.com/dolbyio-samples/communications-api-token-server-netlify/issues"
+  },
+  "homepage": "https://github.com/dolbyio-samples/communications-api-token-server-netlify#readme"
+}
