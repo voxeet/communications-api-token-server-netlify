@@ -18,12 +18,18 @@ This token server example is targeted for deployment with Netlify Functions.  Th
      - Select your application from the  **APPLICATIONS**  category located    on the left side menu. 
      - Select the  **API Keys**  category from the drop-down menu visible under your application.  
      - In the Communications    APIs section, you can access your  **Consumer Key**  and  **Consumer    Secret**.
- 4. In the **Netlify** Console, clear the cache and re-deploy to force reload the new environment variables.
+ - Next go to your build settings and edit them to include: 
+ ```
+npm run
+  ```
+  
+  - In the **Netlify** Console, clear the cache and re-deploy to force reload the new environment variables.
 
- 
+ - At the top of the deploys section you'll see the url to your token server.  It will be similar to this:   https://dolbyio-token-server.netlify.app/.netlify/functions/token-generator. you'll note how the url reflects your projects **functions/token-server** organization. 
+
 
 #### Local installation:
-
+ if you want to edit or modify your project just pull down your copy from your GitHub (or GitLab).
 ```
 git clone <your name or repo organization> /communications-api-token-server-netlify
 ```
