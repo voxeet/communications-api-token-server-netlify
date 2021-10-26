@@ -1,2 +1,6 @@
 [build]
   functions = "functions"
+
+[template.environment]
+  CONSUMER_KEY = "Get your API key from https://dolby.io/"
+  CONSUMER_SECRET = "Get your API secret from https://dolby.io/"
