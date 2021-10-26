@@ -1,2 +1,13 @@
-[build]
+[build] 
+  publish = "www"
+  command = "echo No build command yet!"
   functions = "functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  
+[template.environment]
+  CONSUMER_KEY = "Get your API key from https://dolby.io/"
+  CONSUMER_SECRET = "Get your API secret from https://dolby.io/"
