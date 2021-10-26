@@ -8,24 +8,17 @@ This token server example is targeted for deployment with Netlify Functions.  Th
 
 ####  How to Install and deploy this project on Netlify:
 
-  
-
- - [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/dolbyio-samples/communications-api-token-server-netlify) Clicking this link will automatically prepare a copy of this project to instantly deply to Netlify, and link that copy to your own GitHub (or GitLab) repo.   After clicking the link follow the instructions to link and copy this repo to your GitHub (or GitLab) user or organization.
- - Add the **CONSUMER_KEY** and **CONSUMER_SECRET** Enviromental Variables to your Netlify Instance and fill in the values with your applications keys: You can find your  **Consumer Key**  and  **Consumer Secret**  by following these steps:
- 
-	 - Select the  **SIGN IN**  link located in the upper right corner of   the Dolby.io page. 
+ - First you'll need an API key and API secret to comunicate with the Dobly APIs. To create those:
+	- Select the  **SIGN IN**  link located in the upper right corner of the [Dolby.io](https://dolbly.io) page. 
      - Log in using your email and password. Click the     **DASHBOARD**  link visible in the upper right corner of the website. 
      - Select your application from the  **APPLICATIONS**  category located    on the left side menu. 
      - Select the  **API Keys**  category from the drop-down menu visible under your application.  
-     - In the Communications    APIs section, you can access your  **Consumer Key**  and  **Consumer    Secret**.
- - Next go to your build settings and edit them to include: 
- ```
-npm run
-  ```
-  
-  - In the **Netlify** Console, clear the cache and re-deploy to force reload the new environment variables.
+     - In the Communications    APIs section, you can access your  **Consumer Key**  and  **Consumer Secret**.  
 
- - At the top of the deploys section you'll see the url to your token server.  It will be similar to this:   https://dolbyio-token-server.netlify.app/.netlify/functions/token-generator. you'll note how the url reflects your projects **functions/token-server** organization. 
+ - Now that you have your API credentials, you can clone this example project and deploy it to the web using Netlify.
+ 	- Clicking [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/dolbyio-samples/communications-api-token-server-netlify) will set this all up for you, taking you to your new project admin in Netlify
+	- Netlify will ask you for a name for the new repository it will create for you, and for you to provide the **CONSUMER_KEY** and **CONSUMER_SECRET** you created to authenticate with Dolby, which it will store as environment variables.
+	 - Once it has deployed, you'll find your project's URL at the top of the site overview page in your Netlify admin, and you'll be able to visit it and navigate to your site's token generator function.
 
 
 #### Local installation:
@@ -39,3 +32,5 @@ cd communications-api-token-server-netlify
 ```
 npm install
 ```
+
+Pushing changes to your repository will autromatically trigger a fresh deployment in Netlify.
