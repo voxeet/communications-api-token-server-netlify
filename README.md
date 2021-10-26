@@ -1,4 +1,4 @@
-# Dolby.io Comminications API Token Server
+# Dolby.io Communications API Token Server
 
 Using a token for [initialization](https://docs.dolby.io/communications-apis/docs/initializing-javascript) of our SDK follows our best practice for securing your application. 
 
