@@ -9,5 +9,5 @@
   status = 200
   
 [template.environment]
-  CONSUMER_KEY = "Get your API key from https://dolby.io/"
-  CONSUMER_SECRET = "Get your API secret from https://dolby.io/"
+  CONSUMER_KEY = "Get your Consumer Key from https://dolby.io/"
+  CONSUMER_SECRET = "Get your Consumer Secret from https://dolby.io/"
