@@ -16,9 +16,15 @@ This token server example is targeted for deployment with Netlify Functions.  Th
      - In the Communications    APIs section, you can access your  **Consumer Key**  and  **Consumer Secret**.  
 
  - Now that you have your API credentials, you can clone this example project and deploy it to the web using Netlify.
- 	- Clicking [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/dolbyio-samples/communications-api-token-server-netlify) will set this all up for you, taking you to your new project admin in Netlify
-	- Netlify will ask you for a name for the new repository it will create for you, and for you to provide the **CONSUMER_KEY** and **CONSUMER_SECRET** you created to authenticate with Dolby, which it will store as environment variables.
-	 - Once it has deployed, you'll find your project's URL at the top of the site overview page in your Netlify admin, and you'll be able to visit it and navigate to your site's token generator function.
+
+Tokern Server:
+ [![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dolbyio-samples/communications-api-token-server-netlify)
+ 	- Clicking on the [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/dolbyio-samples/communications-api-token-server-netlify) button will set this all up for you, taking you to your new project admin in Netlify.
+	- You'll see an auth dialog to link you account to Netlify. Follow the linking instructions.
+	- Netlify will then present a form with the name of the repo, feel free to modify it. This name will be the name for clone of this project.
+	- Netlify will automatically clone the repo in the next step.  
+	- The other fields are for you Dolby.io API key and secret; Back in the Dolby.io dashboard, copy each key and paste them into the form.  This token service will be tied to the application you've previously created in the Dolby.io Dash board.  The  **CONSUMER_KEY** and **CONSUMER_SECRET** you created to authenticate with Dolby.io's APIs will be added to your Netlify sites, deployment; which will store as environment variables.
+	 - Once it has deployed, you'll find both the link to the GitHub clone and your project's URL at the top of the site overview page in your Netlify admin console, from there and you'll be able to visit the new site you just created and navigate to your site's token generator function.  Copy the URL to this token service to use in your application.  
 
 
 #### Local installation:
